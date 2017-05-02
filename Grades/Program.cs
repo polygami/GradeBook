@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,9 @@ namespace Grades
 	{
 		static void Main(string[] args)
 		{
+			SpeechSynthesizer synth = new SpeechSynthesizer();
+			synth.Speak("Boom shacka lacka lacka lacka lacka lacka lacka Boom shacka lacka lacka lacka lacka lacka lacka Boom shacka lacka lacka lacka lacka lacka lacka Boom");
+
 			GradeBook book = new GradeBook();
 			book.AddGrade(91);
 			book.AddGrade(21.5f);
